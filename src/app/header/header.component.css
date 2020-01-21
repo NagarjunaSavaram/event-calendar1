@@ -1,0 +1,39 @@
+
+.navbar {
+    position: fixed;
+    border: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #001440;
+    color: white;
+
+}
+
+.no-padding-container-fluid {
+    padding-left: 0px;
+    background-color: #001440;
+    color: #fff;
+    line-height: normal;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-shadow-box {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1),
+    0 1px 1px rgba(0, 0, 0, .1),
+    0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.col-xs-12 {
+    float: left;
+
+}
+
+a {
+    font-style: initial;
+}

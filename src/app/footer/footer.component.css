@@ -1,0 +1,55 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: left;
+    background-color: #f8f9f9;
+    margin-bottom: 30px;
+    
+
+
+}
+
+
+div {
+    text-align: center;
+    height: 30px;
+    padding-left: 30px;
+    font-size: x-small;
+}
+
+hr  {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    
+    
+}
+
+
+span:hover {
+    text-decoration: underline;
+}
+
+
+a:link {
+  color: black;
+}
+
+
+a:visited {
+  color: blue;
+}
+
+
+a:hover {
+  color: black;
+}
+
+
+a:active {
+  color: blue;
+}

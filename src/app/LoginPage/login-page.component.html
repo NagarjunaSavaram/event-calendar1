@@ -1,0 +1,25 @@
+<mat-card>
+    <h2 >Login</h2>
+  <hr>  
+<div>
+    <br>
+</div>
+<p *ngIf="inValid">Invalid Email</p>
+<form [formGroup]="loginForm" novalidate (ngSubmit)="handleLogin(loginForm.value)">
+    <mat-form-field>
+        <input matInput formControlName = "emailId" type="email-box" name="email" id="email" placeholder="Email" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput formControlName = "password" placeholder="Password" [type]="hide ? 'password' : text" required/>
+        
+        <button mat-icon-button matSuffix (click) = "hide = !hide" [attr.aria-label]="'Hide Password'" [attr.aria.pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    <label *ngIf="!inValid">{{message}}</label>
+    <mat-card-actions align="right">
+        <button class="button-1" mat-stroked-button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </mat-card-actions>
+</form>
+</mat-card> 

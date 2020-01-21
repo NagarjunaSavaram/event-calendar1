@@ -1,0 +1,19 @@
+<button class = "button-1" style="float: right;" mat-stroked-button type="button" (click)="logOut()">Log out</button>
+<mat-form-field class="example-full-width" >
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="todaysDate">
+    <mat-datepicker-toggle matSuffix [for]="picker" >
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+   <!-- <div class="month-view">
+      <div class="week" id="week-{{i}}" *ngFor="let week of weeks; let i = index">
+      </div>
+  </div>  -->
+
+  <app-calendar></app-calendar>
+  
+
+
+
